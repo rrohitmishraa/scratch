@@ -61,7 +61,7 @@ const Login = () => {
         />
         <label htmlFor="">Password</label>
         <input
-          type="text"
+          type="password"
           name=""
           value={pass}
           onChange={(e) => setPass(e.target.value)}
